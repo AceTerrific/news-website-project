@@ -1,5 +1,7 @@
+@use "./scss/variables";
+
 * {
-  border: 0;
+  margin: 0;
   padding: 0;
   font-family: "Inter";
 }
@@ -10,12 +12,12 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  color: #dcf10d;
+  color: variables.$logo_color;
 }
 .header {
   position: fixed;
-  background: #192140;
-  padding: 5px 40px;
+  background: variables.$header_color;
+  padding: 5px 50px;
   align-items: center;
   height: 50px;
   left: 0%;
@@ -23,7 +25,7 @@
   top: 0%;
   display: flex;
   justify-content: space-between;
-  color: #ffffff;
+  color: variables.$background_color;
 }
 
 .content {
@@ -43,10 +45,10 @@
 }
 .box {
   border: 1px solid black;
-  background-color: rgb(188, 188, 255);
+  background-color: variables.$background_color; // to change
   height: 350px;
   width: 320px;
-  margin: 20px;
+  margin: 40px;
 }
 
 .sign-up-login {
@@ -63,12 +65,38 @@
 .sign-up-btn {
   background-color: transparent;
   color: #9d9db5;
+  border: none;
 }
 
 .login-btn {
   background-color: transparent;
-  color: #0266ff;
-  border: 1px solid #0266ff;
+  color: variables.$secondary_color;
+  border: 1px solid variables.$secondary_color;
   padding: 0px 15px;
   border-radius: 20px;
+}
+
+.footer {
+  background: variables.$footer_color;
+  color: variables.$background_color;
+  height: 300px;
+  font-size: 16px;
+
+  .footer-first-row,
+  .footer-second-row {
+    justify-content: space-between;
+    display: flex;
+    justify-items: center;
+    padding: 60px 80px 20px 80px;
+    .row-content {
+      display: flex;
+      font-size: 12px;
+      font-weight: 400;
+      gap: 20px;
+      padding-top: 20px;
+    }
+    .policy {
+      padding-top: 40px;
+    }
+  }
 }
