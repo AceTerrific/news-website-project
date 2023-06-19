@@ -25,6 +25,7 @@
   display: flex;
   justify-content: space-between;
   color: #ffffff;
+  z-index: 1;
 }
 
 .content {
@@ -39,22 +40,35 @@
   gap: 20px;
   justify-content: center;
   align-items: center;
-  font-weight: 500;
+  font-weight: 100;
   font-size: 16px;
   margin-left: 20%;
 }
 
 .box {
-  border: 1px solid black;
   background-color: #ffffff;
   height: 350px;
   width: 320px;
   margin: 40px;
 }
 
+img {
+  width: 320px;
+  height: 250px;
+}
+
+.thumbnail-content {
+  position: relative;
+  bottom: 80px;
+  padding: 10px;
+  height: 150px;
+  width: 320px;
+  background-color: white;
+}
+
 .sign-up-login {
   display: flex;
-  width: 140px;
+  width: 160px;
   height: 37px;
   padding: 10px;
   font-family: "Inter";
@@ -65,20 +79,42 @@
 
 .sign-up-btn {
   background-color: transparent;
-  color: #9d9db5;
+  color: #9D9DB5;
   border: none;
-}
-
-.login-btn {
-  background-color: transparent;
-  color: #0266ff;
-  border: 1px solid #0266ff;
   padding: 0px 15px;
   border-radius: 20px;
 }
 
+.sign-up-btn:hover {
+  color: #0266ff;
+  border: none;
+}
+
+.sign-up-btn:active {
+  background-color: #0266ff;
+  color: #ffffff;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: #9D9DB5;
+  border: 1px solid #9D9DB5;
+  padding: 0px 15px;
+  border-radius: 20px;
+}
+
+.login-btn:hover {
+  color: #0266ff;
+  border: 1px solid #0266ff;
+}
+
+.login-btn:active {
+  background-color: #0266ff;
+  color: #ffffff;
+}
+
 .footer {
-  background: #10131C;
+  background: #10131c;
   color: #ffffff;
   height: 300px;
   font-size: 16px;
@@ -94,7 +130,7 @@
 .footer .footer-second-row .row-content {
   display: flex;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 100;
   gap: 20px;
   padding-top: 20px;
 }
