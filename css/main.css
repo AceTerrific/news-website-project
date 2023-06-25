@@ -31,6 +31,7 @@
 .content {
   display: grid;
   margin-top: 100px;
+  margin-left: 0;
   grid-template-columns: repeat(auto-fill, minmax(320px, 350px));
   justify-content: center;
 }
@@ -46,10 +47,29 @@
 }
 
 .box {
+  position: relative;
   background-color: #ffffff;
   height: 350px;
   width: 320px;
-  margin: 40px;
+  margin: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  color: transparent;
+}
+
+.close-button:hover {
+  display: block;
+  transition: transform 80ms ease-in-out;
+  transform: scale(1.2);
+  color: #9d9db5;
+}
+
+.close-button:active {
+  color: #0266ff;
 }
 
 img {
@@ -58,26 +78,33 @@ img {
 }
 
 .thumbnail-content {
-  position: relative;
-  bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  flex-shrink: 1;
+  bottom: 50px;
   padding: 10px;
-  height: 150px;
+  height: auto;
   width: 300px;
-  background-color: white;
-  margin: 10pxl;
+  background-color: #f8f9fc;
 }
 .thumbnail-content .card-title {
   display: block;
-  border-bottom: 1px solid #9D9DB5;
-  padding-bottom: 5px;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 5px 40px 20px 10px;
 }
 .thumbnail-content .card-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #9d9db5;
+  margin: 0px 10px;
+  padding-top: 15px;
 }
 .thumbnail-content .card-date {
-  border: 1px solid #9D9DB5;
+  border: 1px solid #9d9db5;
   border-radius: 20px;
   padding: 5px 15px;
   font-size: 12px;
@@ -97,8 +124,8 @@ img {
 
 .sign-up-btn {
   background-color: transparent;
-  color: #9D9DB5;
-  border: 1px solid #9D9DB5;
+  color: #9d9db5;
+  border: 1px solid #9d9db5;
   padding: 0px 15px;
   border-radius: 20px;
   width: 80px;
@@ -116,8 +143,8 @@ img {
 
 .login-btn {
   background-color: transparent;
-  color: #9D9DB5;
-  border: 1px solid #9D9DB5;
+  color: #9d9db5;
+  border: 1px solid #9d9db5;
   padding: 0px 15px;
   border-radius: 20px;
   width: 80px;
@@ -133,12 +160,17 @@ img {
   color: #ffffff;
 }
 
-.fa-heart {
-  color: #9D9DB5;
+.heartBtn {
+  color: #9d9db5;
 }
 
-.fa-heart:hover {
+.heartBtn:hover {
   color: #0266ff;
+}
+
+.heartBtn:active {
+  transition: transform 40ms ease-in-out;
+  transform: scale(1.5);
 }
 
 .blue-heart {
