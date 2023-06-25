@@ -60,12 +60,31 @@ img {
   bottom: 80px;
   padding: 10px;
   height: 150px;
-  width: 320px;
+  width: 300px;
   background-color: white;
+  margin: 10pxl;
+  .card-title {
+    display: block;
+    border-bottom: 1px solid variables.$button_color;
+    padding-bottom: 5px;
+  }
+  .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card-date {
+    border: 1px solid variables.$button_color;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 12px;
+  }
 }
+
 .sign-up-login {
+  gap: 3px;
   display: flex;
-  width: 160px;
+  width: 180px;
   height: 37px;
   padding: 10px;
   font-family: "Inter";
@@ -75,23 +94,34 @@ img {
 }
 
 .sign-up-btn {
-  @include normalButton;
+  @include normalButton(1px solid variables.$button_color);
+  @include buttonParam;
 }
 
 .sign-up-btn:hover {
-  @include hoverButton;
+  @include hoverButton(1px solid variables.$secondary_color);
 }
 .sign-up-btn:active {
   @include activeButton;
 }
 .login-btn {
   @include normalButton(1px solid variables.$button_color);
+  @include buttonParam;
 }
 .login-btn:hover {
   @include hoverButton(1px solid variables.$secondary_color);
 }
 .login-btn:active {
   @include activeButton;
+}
+.fa-heart {
+  color: variables.$button_color;
+}
+.fa-heart:hover {
+  color: variables.$secondary_color;
+}
+.blue-heart {
+  color: variables.$secondary_color;
 }
 .footer {
   background: variables.$footer_color;

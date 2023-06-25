@@ -2,8 +2,6 @@
   background-color: transparent;
   color: variables.$button_color;
   border: $border;
-  padding: 0px 15px;
-  border-radius: 20px;
 }
 
 @mixin hoverButton($border: none) {
@@ -14,4 +12,10 @@
 @mixin activeButton {
   background-color: variables.$secondary_color;
   color: variables.$background_color;
+}
+
+@mixin buttonParam {
+  padding: 0px 15px;
+  border-radius: 20px;
+  width: 80px;
 }

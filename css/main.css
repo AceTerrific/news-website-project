@@ -62,13 +62,31 @@ img {
   bottom: 80px;
   padding: 10px;
   height: 150px;
-  width: 320px;
+  width: 300px;
   background-color: white;
+  margin: 10pxl;
+}
+.thumbnail-content .card-title {
+  display: block;
+  border-bottom: 1px solid #9D9DB5;
+  padding-bottom: 5px;
+}
+.thumbnail-content .card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.thumbnail-content .card-date {
+  border: 1px solid #9D9DB5;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-size: 12px;
 }
 
 .sign-up-login {
+  gap: 3px;
   display: flex;
-  width: 160px;
+  width: 180px;
   height: 37px;
   padding: 10px;
   font-family: "Inter";
@@ -80,14 +98,15 @@ img {
 .sign-up-btn {
   background-color: transparent;
   color: #9D9DB5;
-  border: none;
+  border: 1px solid #9D9DB5;
   padding: 0px 15px;
   border-radius: 20px;
+  width: 80px;
 }
 
 .sign-up-btn:hover {
   color: #0266ff;
-  border: none;
+  border: 1px solid #0266ff;
 }
 
 .sign-up-btn:active {
@@ -101,6 +120,7 @@ img {
   border: 1px solid #9D9DB5;
   padding: 0px 15px;
   border-radius: 20px;
+  width: 80px;
 }
 
 .login-btn:hover {
@@ -111,6 +131,18 @@ img {
 .login-btn:active {
   background-color: #0266ff;
   color: #ffffff;
+}
+
+.fa-heart {
+  color: #9D9DB5;
+}
+
+.fa-heart:hover {
+  color: #0266ff;
+}
+
+.blue-heart {
+  color: #0266ff;
 }
 
 .footer {
