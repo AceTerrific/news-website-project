@@ -54,6 +54,15 @@
   margin: 10px;
 }
 
+.read-icon {
+  display: none;
+}
+
+.box:hover .read-icon {
+  display: block;
+  opacity: 70%;
+}
+
 .close-button {
   position: absolute;
   top: 9px;
@@ -70,6 +79,8 @@
 
 .close-button:active {
   color: #0266ff;
+  transform: scale(1.2);
+  transition: transform 80ms ease-in-out;
 }
 
 img {
@@ -85,7 +96,6 @@ img {
   flex-shrink: 1;
   bottom: 50px;
   padding: 10px;
-  height: auto;
   width: 300px;
   background-color: #f8f9fc;
 }
@@ -173,7 +183,7 @@ img {
   transform: scale(1.5);
 }
 
-.blue-heart {
+.blue {
   color: #0266ff;
 }
 
