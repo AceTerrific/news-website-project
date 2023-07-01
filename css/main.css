@@ -129,7 +129,6 @@ img {
   font-family: "Inter";
   font-style: normal;
   justify-content: space-around;
-  margin-right: 10%;
 }
 
 .sign-up-btn {
@@ -190,7 +189,7 @@ img {
 .footer {
   background: #10131c;
   color: #ffffff;
-  height: 300px;
+  height: auto;
   font-size: 16px;
 }
 .footer .footer-first-row,
@@ -211,4 +210,51 @@ img {
 .footer .footer-first-row .policy,
 .footer .footer-second-row .policy {
   padding-top: 40px;
+}
+
+.burger {
+  display: none;
+}
+
+@media only screen and (max-width: 1020px) {
+  .footer-first-row,
+  .footer-second-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .row-content {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .main-menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sign-up-login {
+    display: none;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-135deg);
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(135deg);
+  }
 }/*# sourceMappingURL=main.css.map */

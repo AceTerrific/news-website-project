@@ -1,6 +1,7 @@
 const heartBtn = document.querySelectorAll(".heartBtn");
 const closeBtn = document.querySelectorAll(".close-button");
 const readBtn = document.querySelectorAll(".read-icon");
+const burgerMenu = document.querySelector("#burger");
 
 heartBtn.forEach((element) => {
   element.addEventListener("click", () => {
@@ -30,4 +31,8 @@ readBtn.forEach((element) => {
       element.firstElementChild.setAttribute("data-icon", "circle");
     }
   });
+});
+
+burgerMenu.addEventListener("click", () => {
+  burgerMenu.classList.toggle("change");
 });
